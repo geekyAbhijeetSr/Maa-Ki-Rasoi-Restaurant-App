@@ -1,0 +1,194 @@
+$brown: #362417;
+$light-brown: #92817a;
+$dutch-white: #f1dabf;
+$white: #fff;
+$light-grey: #f0f0f0;
+$grey: #888;
+$dark-grey: #555;
+$black: #212121;
+$main: #ff0404;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto',
+        serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 1360px;
+    }
+}
+
+
+
+.App {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    // overflow-x: hidden;
+
+    .top-space {
+        height: 55px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            height: 50px;
+        }
+
+        @media (max-width: 576px) {
+            height: 42px;
+        }
+    }
+
+    &.stopScroll {
+        @media (max-width: 578px) {
+            overflow: hidden;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $black;
+}
+
+
+h2 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+
+    @media (max-width: 1439px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
+    @media (max-width: 575px) {
+        font-size: 26px;
+    }
+    @media (max-width: 480px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 300px) {
+        font-size: 22px;
+    }
+}
+
+.preview-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px;
+    justify-content: center;
+
+    @media (max-width: 1199px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 35px;
+    }
+
+    @media (max-width: 991px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    @media (max-width: 480px) {
+        grid-gap: 20px;
+    }
+    @media (max-width: 370px) {
+        grid-gap: 15px;
+    }
+    @media (max-width: 340px) {
+        grid-gap: 10px;
+    }
+    @media (max-width: 319px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.qtybtn {
+    width: 75px;
+    display: flex;
+    border: 1px solid $main;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    user-select: none;
+    background: $main;
+
+    .qbtn,
+    span {
+        width: 25px;
+        padding: 2.5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+    }
+
+    span {
+        color: $dark-grey;
+    }
+
+    .qbtn {
+        background: $main;
+        color: $white;
+        cursor: pointer;
+
+        &:nth-child(1) {
+            border-radius: 10px 0 0 10px;
+        }
+
+        &:nth-child(2) {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}

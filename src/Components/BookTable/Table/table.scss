@@ -1,0 +1,234 @@
+@import '../../App.scss';
+
+.formWrapper {
+    height: 500px;
+    background: url('../../img/table.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 0 100px 0 100px;
+
+    .formContainer {
+        position: absolute;
+        width: 85%;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 90%;
+        background: $light-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px 0 100px 0;
+
+        h2 {
+
+            margin-bottom: 3rem;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        .img1 {
+            right: 0px;
+            top: 0px;
+            width: 325px;
+        }
+
+        .img2 {
+            left: -20px;
+            bottom: -20px;
+            width: 250px;
+        }
+    }
+
+    form {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .resto__input,
+        .resto__select,
+        .resto__btn {
+            width: 160px;
+            padding: .5rem;
+            cursor: pointer;
+            background: transparent;
+            outline: none;
+        }
+
+        .resto__select,
+        .resto__input {
+            border: none;
+            border-bottom: 1px solid $black;
+            color: $dark-grey;
+
+        }
+
+        .resto__select {
+            appearance: none;
+        }
+
+        .resto__btn {
+            background: $black;
+            margin: 10px;
+            color: $white;
+            border: 0;
+            border-radius: 5px;
+        }
+
+
+    }
+
+    @media (max-width: 1439px) {
+
+        border-radius: 0 75px 0 75px;
+
+        .formContainer {
+            align-items: center;
+            border-radius: 75px 0 75px 0;
+            top: 90%;
+
+            h2 {
+                margin-bottom: 2.5rem;
+            }
+
+
+
+            .img1 {
+                display: none;
+            }
+        }
+
+        form {
+            flex-direction: column;
+
+            .resto__input,
+            .resto__select,
+            .resto__btn {
+                width: 400px;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .formContainer {
+
+            h2 {
+                margin-bottom: 2rem;
+            }
+
+            .img2 {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        height: 400px;
+
+        .formContainer {
+            padding: 2rem;
+
+            h2 {
+                margin-bottom: 1rem;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .img2 {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        height: 300px;
+        border-radius: 0 50px 0 50px;
+        .formContainer {
+            height: auto;
+            border-radius: 50px 0 50px 0;
+        }
+
+        form {
+
+            .resto__input,
+            .resto__select,
+            .resto__btn {
+                width: 300px;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        height: 280px;
+    }
+
+
+    @media (max-width: 480px) {
+        border-radius: 0 25px 0 25px;
+        .formContainer {
+            border-radius: 25px 0 25px 0;
+            h2 {
+                width: 100%;
+            }
+        }
+        form {
+
+            .resto__input,
+            .resto__select,
+            .resto__btn {
+                width: 240px;
+            }
+        }
+    }
+
+    @media (max-width: 380px) {
+        .formContainer{ 
+            width: 90%;
+        }
+
+        form {
+
+            .resto__input,
+            .resto__select,
+            .resto__btn {
+                width: 200px;
+            }
+        }
+    }
+
+}
+
+
+.inputForm {
+    margin: 10px;
+    position: relative;
+
+    .icon {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 35px;
+        background: transparent;
+        cursor: pointer;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 50%;
+        }
+    }
+}

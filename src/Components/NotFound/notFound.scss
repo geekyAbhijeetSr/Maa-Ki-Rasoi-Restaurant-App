@@ -1,0 +1,26 @@
+@import '../App.scss';
+
+.not-found {
+    height: calc(100vh - 500px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        text-align: center;
+        color: $black;
+        .error404 {
+            font-size: 150px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            letter-spacing: .05em;
+            a {
+                color: rgb(46, 46, 245);
+            }
+        }
+    }
+}
+

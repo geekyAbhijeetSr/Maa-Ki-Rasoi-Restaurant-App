@@ -1,0 +1,208 @@
+@import '../../App';
+
+.landing-area {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    .landing-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 100px;
+            font-weight: 100;
+            color: $black;
+            text-align: center;
+            letter-spacing: .1em;
+            line-height: 1.2;
+        }
+
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.2rem 2rem;
+                color: $white;
+                width: 250px;
+                text-align: center;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: 400;
+                background: $black;
+                transition: .5s all;
+                border-radius: 10px;
+
+                svg {
+                    width: 25px;
+                    fill: $white;
+                    margin: 0;
+                    margin-right: .5rem;
+                }
+            }
+
+            .menubtn {
+                color: $white;
+                border: 1px solid $main;
+                background: $main;
+
+                svg {
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+
+
+
+    .landing-img {
+        margin-top: 1rem;
+        width: 850px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1439px) {
+        .landing-text {
+
+            h1 {
+                font-size: 75px;
+            }
+
+
+            .buttons {
+                a {
+                    padding: 1rem 1.8rem;
+                    width: 230px;
+
+                    svg {
+                        width: 22px;
+                    }
+                }
+            }
+        }
+
+        .landing-img {
+            width: 700px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .landing-text {
+
+            h1 {
+                font-size: 60px;
+            }
+
+
+            .buttons {
+                margin-top: 1.5rem;
+
+                a {
+                    padding: .8rem 1.6rem;
+                    width: 200px;
+                    margin: 8px;
+
+                    svg {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .landing-img {
+            width: 600px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .landing-text {
+
+            h1 {
+                font-size: 55px;
+            }
+
+
+            .buttons {
+                margin-top: 1rem;
+
+                a {
+                    padding: .6rem 1.4rem;
+                    width: 180px;
+                    margin: 5px;
+                    font-size: 16px;
+
+                    svg {
+                        width: 18px;
+                    }
+                }
+            }
+        }
+
+        .landing-img {
+            width: 500px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .landing-text {
+
+            h1 {
+                font-size: 45px;
+            }
+
+
+            .buttons {
+                margin-top: .8rem;
+            }
+        }
+
+        .landing-img {
+            width: 400px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .landing-text {
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        .landing-img {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 314px) {
+        .landing-text {
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+
+}

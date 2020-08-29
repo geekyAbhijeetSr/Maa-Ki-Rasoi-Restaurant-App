@@ -1,0 +1,19 @@
+@import '../App';
+
+.home {
+    .table {
+        margin-top: 12rem;
+
+        @media (max-width: 1439px) {
+            margin-top: 10rem;
+        }
+
+        @media (max-width: 1199px) {
+            margin-top: 8rem;
+        }
+
+        @media (max-width: 991px) {
+            margin-top: 6rem;
+        }
+    }
+}

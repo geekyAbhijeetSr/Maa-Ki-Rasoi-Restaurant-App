@@ -1,0 +1,103 @@
+@import '../App.scss';
+
+.menuitem {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+
+
+    .img {
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .details {
+        flex: 1;
+        padding: .5rem .8rem;
+        padding-bottom: .8rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name {
+            font-size: 18px;
+            color: $black;
+        }
+
+        .priceAdd {
+            display: flex;
+            justify-content: space-between;
+            margin-top: .3rem;
+
+            .price {
+                display: flex;
+                align-items: center;
+                color: $dark-grey;
+
+                span {
+                    margin-right: .2rem;
+                }
+            }
+
+            .addbtn {
+                width: 75px;
+                padding: 5px 0;
+                color: $white;
+                background: $main;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                user-select: none;
+                cursor: pointer;
+            }
+
+
+        }
+    }
+
+
+
+    @media (max-width: 480px) {
+        border-radius: 15px;
+
+        .img {
+            img {
+                border-radius: 15px;
+            }
+        }
+
+        .details {
+            padding: .6rem;
+
+            .name {
+                font-size: 16px;
+            }
+
+            .price {
+                font-size: 14px;
+
+            }
+        }
+    }
+
+    @media (max-width: 355px) {
+        border-radius: 10px;
+
+        .img {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .details {
+            padding: .5rem;
+        }
+    }
+}
