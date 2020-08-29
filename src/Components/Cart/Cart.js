@@ -14,7 +14,6 @@ function Cart(props) {
         )
     })
 
-    console.log(items)
     const render = itemInCart
         ?
         (
