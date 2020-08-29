@@ -154,7 +154,8 @@
 
     @media (max-width: 767px) {
         height: 300px;
-        border-radius: 0 50px 0 50px;
+        border-radius: 0;
+        background-attachment: scroll;
         .formContainer {
             height: auto;
             border-radius: 50px 0 50px 0;
@@ -176,7 +177,6 @@
 
 
     @media (max-width: 480px) {
-        border-radius: 0 25px 0 25px;
         .formContainer {
             border-radius: 25px 0 25px 0;
             h2 {
