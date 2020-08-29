@@ -8,7 +8,7 @@
     }
 
     @media (max-width: 767px) {
-        
+
         .swiper-slide {
             height: 210px !important;
         }
@@ -48,6 +48,12 @@
 
     @media (max-width: 991px) {
         margin-top: 16rem;
+
+        h2 {
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
@@ -142,7 +148,7 @@
 
     @media (max-width: 400px) {
         padding: 1rem;
-        
+
         .user-rating-wrapper {
             flex-direction: column;
             align-items: flex-start;
