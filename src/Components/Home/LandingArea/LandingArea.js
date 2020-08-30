@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './landingArea.scss'
 
-import landingImg from '../../img/fresh-veg.png'
+import landingImg from '../../img/fresh-veg.webp'
 import MenuIcon from '../../Icons/MenuIcon'
 import TableIcon from '../../Icons/TableIcon'
 

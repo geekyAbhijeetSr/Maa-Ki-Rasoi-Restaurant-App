@@ -6,8 +6,8 @@ import "react-datepicker/dist/react-datepicker.css"
 import CalenderIcon from '../../Icons/CalenderIcon'
 import TimeIcon from '../../Icons/TimeIcon'
 import PeopleIcon from '../../Icons/PersonIcon'
-import plate2 from '../../img/plate2.png'
-import plate from '../../img/plate.png'
+import plate2 from '../../img/plate2.webp'
+import plate from '../../img/plate.webp'
 
 class Table extends React.Component {
     constructor(props) {

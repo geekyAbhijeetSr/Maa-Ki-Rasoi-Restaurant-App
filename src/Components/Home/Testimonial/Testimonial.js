@@ -67,7 +67,7 @@ class Testimonial extends React.Component {
         return (
             <div className="container testimonial-wrapper">
 
-                <h2>What Our Customers Says?</h2>
+                <h2>What Our Customers Say</h2>
                 <Swiper className="testimonial"
                     slidesPerView={1}
                     breakpoints={
