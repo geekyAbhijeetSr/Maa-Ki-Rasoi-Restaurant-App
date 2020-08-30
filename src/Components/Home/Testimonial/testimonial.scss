@@ -55,6 +55,12 @@
             margin-right: auto;
         }
     }
+
+    @media (max-width: 480px) {
+        h2 {
+            width: 250px;
+        }
+    }
 }
 
 .testimonial {
