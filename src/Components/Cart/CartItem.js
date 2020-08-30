@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoMdRemove } from 'react-icons/io'
-import { AiFillDelete } from 'react-icons/ai'
+import { RiDeleteBin7Line } from 'react-icons/ri'
 import { IoMdAdd } from 'react-icons/io'
 
 import './cartItem.scss'
@@ -29,7 +29,7 @@ function CartItem(props) {
                         <div className='qbtn' onClick={() => removeItem(item.id)}>
                             {item.selectedQty > 1 ?
                                 <IoMdRemove /> :
-                                <AiFillDelete />
+                                <RiDeleteBin7Line />
                             }
 
                         </div>

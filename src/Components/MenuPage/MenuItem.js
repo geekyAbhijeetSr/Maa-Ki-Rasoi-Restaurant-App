@@ -2,7 +2,7 @@ import React from 'react'
 import './menuItem.scss'
 import { IoMdRemove } from 'react-icons/io'
 import { IoMdAdd } from 'react-icons/io'
-import { RiDeleteBin7Line as AiFillDelete } from 'react-icons/ri'
+import { RiDeleteBin7Line } from 'react-icons/ri'
 
 function MenuItem(props) {
     const { item, addItem, removeItem } = props
@@ -26,7 +26,7 @@ function MenuItem(props) {
                             <div className='qbtn' onClick={() => removeItem(item.id)}>
                                 {item.selectedQty > 1 ?
                                     <IoMdRemove /> :
-                                    <AiFillDelete />
+                                    <RiDeleteBin7Line />
                                 }
 
                             </div>

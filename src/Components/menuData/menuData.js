@@ -44,8 +44,8 @@ export default [
         category: 'soup',
         price: 89,
         img: corn_soup,
-        selectedQty: 0,
-        total: 0,
+        selectedQty: 1,
+        total: 89,
     },
     {
         id: 1,
