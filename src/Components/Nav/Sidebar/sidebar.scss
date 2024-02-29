@@ -2,11 +2,11 @@
 
 .sidebar {
     position: fixed;
-    top: 55px;
+    top: 70px;
     left: -100%;
     background-color: $light-grey;
     width: 70%;
-    height: calc(100% - 55px);
+    height: calc(100% - 70px);
     padding: 2rem;
     transition: left .5s ease-out;
     z-index: 200;
@@ -46,19 +46,9 @@
             }
         }
     }
-
     
-
-
-    @media (max-width: 768px) {
-        top: 50px;
-        height: calc(100% - 50px);
-    }
     @media (min-width: 579px) {
         display: none
     }
-    @media (max-width: 576px) {
-        top: 42px;
-        height: calc(100% - 42px);
-    }
+    
 }
